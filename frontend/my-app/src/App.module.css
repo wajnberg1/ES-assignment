@@ -1,0 +1,38 @@
+/* App.module.css */
+
+/* Root container */
+.container {
+  padding: 20px;
+}
+
+/* Grid container for responsive layout */
+.gridContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Flex layout for larger screens */
+@media screen and (min-width: 768px) {
+  .gridContainer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Left and right sections */
+.section {
+  flex: 1;
+}
+
+/* Titles */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.searchInput {
+  margin-bottom: 20px;
+  width: 100%;
+}
